@@ -7,12 +7,12 @@ security:
         register: 'Kayıt Ol'
         username: 'Kullanıcı adı'
         password: 'Şifre'
-        # cancel: 'Cancel'
+        cancel: 'Vazgeç'
     resetting:
-        # description: "Enter your email address below and we'll send you password reset instructions."
+        description: "Alttaki kutuya e-posta adresini girin, size şifre sıfırlama bilgilerini göndereceğiz."
     register:
-        # page_title: 'Create an account'
-        # go_to_account: 'Go to your account'
+        page_title: 'Yeni hesap oluşturun'
+        go_to_account: 'Hesabınıza gidin'
 
 menu:
     left:
@@ -25,13 +25,13 @@ menu:
         # internal_settings: 'Internal Settings'
         import: 'İçe Aktar'
         howto: 'Yardım'
-        # developer: 'Developer'
+        developer: 'Geliştirici'
         logout: 'Çıkış Yap'
         about: 'Hakkımızda'
         search: 'Ara'
-        # save_link: 'Save a link'
+        save_link: 'Bir bağlantı kaydet'
         back_to_unread: 'Okunmayan makalelere geri dön'
-        # users_management: 'Users management'
+        users_management: 'Kullanıcı yönetimi'
     top:
         add_new_entry: 'Yeni bir makale ekle'
         search: 'Ara'
@@ -46,7 +46,7 @@ footer:
         social: 'Sosyal'
         powered_by: 'powered by'
         about: 'Hakkımızda'
-    # stats: Since %user_creation% you read %nb_archives% articles. That is about %per_day% a day!
+    stats: %user_creation% tarihinden beri %nb_archives% makale okudunuz. Bu günde yaklaşık %per_day% demek!
 
 config:
     page_title: 'Yapılandırma'
@@ -64,18 +64,18 @@ config:
         items_per_page_label: 'Sayfa başına makale sayısı'
         language_label: 'Dil'
         reading_speed:
-            # label: 'Reading speed'
-            # help_message: 'You can use online tools to estimate your reading speed:'
-            # 100_word: 'I read ~100 words per minute'
-            # 200_word: 'I read ~200 words per minute'
-            # 300_word: 'I read ~300 words per minute'
-            # 400_word: 'I read ~400 words per minute'
-        # pocket_consumer_key_label: Consumer key for Pocket to import contents
-        # help_theme: "wallabag is customizable. You can choose your prefered theme here."
-        # help_items_per_page: "You can change the number of articles displayed on each page."
-        # help_reading_speed: "wallabag calculates a reading time for each article. You can define here, thanks to this list, if you are a fast or a slow reader. wallabag will recalculate the reading time for each article."
-        # help_language: "You can change the language of wallabag interface."
-        # help_pocket_consumer_key: "Required for Pocket import. You can create it in your Pocket account."
+            label: 'Okuma hızı'
+            help_message: 'Okuma hızını ölçmek için online araçlar kullanabilirsiniz:'
+            100_word: 'Dakikada ~100 kelime okurum'
+            200_word: 'Dakikada ~200 kelime okurum'
+            300_word: 'Dakikada ~300 kelime okurum'
+            400_word: 'Dakikada ~400 kelime okurum'
+        pocket_consumer_key_label: "Pocket içeriğinizi aktarmak için müşteri anahtarı"
+        help_theme: "wallabag özelleştirilebilirdir. Tema tercihinizi buradan yapabilirsiniz."
+        help_items_per_page: "Her sayfada gösterilen makale sayısını değiştirebilirsiniz."
+        help_reading_speed: "wallabag her makale için okuma süresi hesaplar. You can define here, thanks to this list, if you are a fast or a slow reader. wallabag will recalculate the reading time for each article."
+        help_language: "wallabag arayüzünün dilini değiştirebilirsiniz."
+        help_pocket_consumer_key: "Pocket'ten aktarmak için gereklidir. Pocket hesabınızda bunu oluşturabilirsiniz."
     form_rss:
         description: 'wallabag RSS akışı kaydetmiş olduğunuz makalelerini favori RSS okuyucunuzda görüntülemenizi sağlar. Bunu yapabilmek için öncelikle belirteç (token) oluşturmalısınız.'
         token_label: 'RSS belirteci (token)'
@@ -93,16 +93,16 @@ config:
         name_label: 'İsim'
         email_label: 'E-posta'
         twoFactorAuthentication_label: 'İki adımlı doğrulama'
-        # help_twoFactorAuthentication: "If you enable 2FA, each time you want to login to wallabag, you'll receive a code by email."
+        help_twoFactorAuthentication: "İki adımlı doğrulamayı açarsanız wallabag'a her giriş yapmak istediğinizde, size e-posta ile bir giriş kodu gönderilir."
     form_password:
-        # description: "You can change your password here. Your new password should by at least 8 characters long."
+        description: "Şifrenizi buradan değiştirebilirsiniz. Yeni şifreniz en az 8 harf olmalı."
         old_password_label: 'Eski şifre'
         new_password_label: 'Yeni şifre'
         repeat_new_password_label: 'Yeni şifrenin tekrarı'
     form_rules:
-        # if_label: 'if'
-        # then_tag_as_label: 'then tag as'
-        # delete_rule_label: 'delete'
+        if_label: 'eğer'
+        then_tag_as_label: 'ise şöyle etiketle'
+        delete_rule_label: 'sil'
         rule_label: 'Kural'
         tags_label: 'Etiketler'
         faq:
